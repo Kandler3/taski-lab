@@ -1,10 +1,5 @@
 on: push
 
-env:
-  DOCKER_REGISTRY: docker.io
-  DOCKER_REPOSITORY: kandler3/vvot-lab 
-  DOCKER_TAG: latest
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,4 +26,4 @@ jobs:
     - name: Build and push Docker images using docker-compose
       run: |
         docker-compose -f compose.yaml build
-        docker-compose -f compose.yaml push
+        docker push kandler3/vvot-lab:latest
