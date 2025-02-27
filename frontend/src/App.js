@@ -4,6 +4,8 @@ import TaskEditModal from "./components/TaskEditModal";
 import Task from "./components/Task";
 import TabList from "./components/TabList";
 
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+
 axios.interceptors.response.use(function (response) {
   if (response.headers['content-type'] !== 'application/json') {
     alert('unsupport data format in server response')
@@ -32,7 +34,6 @@ const App = () => {
     const request = item.id
       ? axios.put(`/api/tasks/${item.id}/`, item)
       : axios.post("/api/tasks/", item);
-
     request
       .then((res) => {
         refreshList();
