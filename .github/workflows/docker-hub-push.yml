@@ -26,4 +26,4 @@ jobs:
     - name: Build and push Docker images using docker-compose
       run: |
         docker-compose -f compose.yaml build
-        docker push kandler3/vvot-lab:latest
+        docker-compose -f compose.yaml push
