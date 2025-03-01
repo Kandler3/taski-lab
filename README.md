@@ -3,7 +3,7 @@
 
 ## запуск
 ```
-docker-compose up
+docker-compose up --build
 ```
 
 Приложение запускается на localhost:3000
