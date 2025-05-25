@@ -1,19 +1,17 @@
 # Taski Lab
 
 Проект выполнен в рамках лабораторной работы по дисциплине «Введение в облачные технологии».
+
 Задача: На основе существующего проекта:
+
 - Написать `Dockerfile` для фронтенда и бэкенда  
 - Собрать `docker-compose` для запуска приложения  
 - Настроить `GitHub Actions` для автоматической сборки образов и загрузка на Docker Hub
 
----
-
 ## Docker Hub
 
-- [Frontend](https://hub.docker.com/repository/docker/kandler3/taski-lab-frontend)  
+- [Frontend](https://hub.docker.com/repository/docker/kandler3/taski-lab-frontend)
 - [Backend](https://hub.docker.com/repository/docker/kandler3/taski-lab-backend)
-
----
 
 ## Запуск
 
